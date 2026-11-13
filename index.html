@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Google tag (gtag.js) GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2BNDBQP0W7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2BNDBQP0W7');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora GNC vs Nafta 2026 | Ahorro Mensual y Amortización</title>
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#10b981">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <meta name="description" content="¿Conviene poner GNC hoy en Argentina? Calculá tu ahorro mensual en pesos vs nafta súper y en cuántos meses o kilómetros amortizás el equipo de 5ta generación.">
+  <meta name="keywords" content="calculadora gnc vs nafta, conviene poner gnc 2026, cuanto ahorro con gnc por mes, amortizacion equipo gnc 5ta generacion, rendimiento m3 gnc vs litro nafta, costo equipo gnc argentina">
+  <link rel="canonical" href="https://sebiglesias.com.ar/gnc/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Calculadora GNC vs Nafta 2026 | ¿Conviene poner GNC?">
+  <meta property="og:description" content="Calculá tu ahorro mensual y en cuántos meses amortizás el equipo de GNC vs nafta súper.">
+  <meta property="og:url" content="https://sebiglesias.com.ar/gnc/">
+  <meta property="og:site_name" content="Calculadora GNC Argentina">
+  <meta property="og:locale" content="es_AR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Calculadora GNC vs Nafta 2026 | Ahorro y Amortización">
+  <meta name="twitter:description" content="Calculá tu ahorro mensual en pesos y tiempo de amortización de equipo GNC.">
+
+  <!-- Google AdSense -->
+  <meta name="google-adsense-account" content="ca-pub-3381238987477190">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3381238987477190" crossorigin="anonymous"></script>
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "name": "Calculadora GNC vs Nafta Argentina",
+        "url": "https://sebiglesias.com.ar/gnc/",
+        "description": "Calculadora de ahorro mensual y amortización de equipo de GNC 5ta generación.",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Any",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "ARS" }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿En cuántos kilómetros se amortiza un equipo de GNC en 2026?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Con los valores actuales de nafta súper (~$1.195) y GNC (~$620/m3), un automovilista ahorra aproximadamente entre un 45% y 50% en combustible por kilómetro. Un equipo de 5ta generación de $1.450.000 se amortiza en aproximadamente 18.000 a 22.000 kilómetros de recorrido (entre 10 y 14 meses para quien realiza 1.500 km al mes)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto rinde 1 m3 de GNC respecto a 1 litro de nafta?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Técnicamente, 1 m3 de GNC equivale energéticamente a 1.13 litros de nafta súper. Esto significa que si tu auto consume 8.5 litros de nafta cada 100 km, consumirá unos 7.5 m3 de GNC para recorrer la misma distancia."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #070c09;
+      --surface: #0f1813;
+      --surface-raised: #15241c;
+      --border: rgba(255, 255, 255, 0.08);
+      --border-strong: rgba(255, 255, 255, 0.16);
+      --text: #f1f5f9;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --accent: #10b981;
+      --accent-muted: rgba(16, 185, 129, 0.14);
+      --accent-border: rgba(16, 185, 129, 0.35);
+      --teal: #06b6d4;
+      --radius-sm: 6px;
+      --radius: 10px;
+      --radius-lg: 14px;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --font-mono: ui-monospace, "SF Mono", "Menlo", "Consolas", monospace;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      background-image: radial-gradient(ellipse 90% 40% at 50% 0%, rgba(16, 185, 129, 0.15) 0%, transparent 80%),
+                        repeating-linear-gradient(0deg, transparent, transparent 39px, rgba(255, 255, 255, 0.015) 39px, rgba(255, 255, 255, 0.015) 40px);
+      color: var(--text);
+      font-family: var(--font-sans);
+      line-height: 1.5;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .container { width: 100%; max-width: 720px; margin: 0 auto; padding: 24px 16px 48px; }
+    .app-header { margin-bottom: 24px; border-bottom: 1px solid var(--border); padding-bottom: 20px; }
+    .badge-row { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
+    .tag { font-family: var(--font-mono); font-size: 11px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; padding: 3px 8px; border-radius: var(--radius-sm); background: var(--surface-raised); color: var(--text-muted); border: 1px solid var(--border); }
+    .tag.tag-accent { background: var(--accent-muted); color: var(--accent); border-color: var(--accent-border); }
+    h1 { font-size: clamp(20px, 4vw, 26px); font-weight: 700; letter-spacing: -0.02em; margin-bottom: 6px; color: var(--text); }
+    .subtitle { color: var(--text-muted); font-size: 14px; line-height: 1.45; }
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; margin-bottom: 16px; }
+    .card-title { font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 16px; display: flex; align-items: center; justify-content: space-between; }
+    .form-group { margin-bottom: 14px; }
+    label { display: block; font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 6px; }
+    .helper-text { font-size: 11px; color: var(--text-dim); margin-top: 4px; }
+    input[type="number"], select { width: 100%; background: var(--surface-raised); border: 1px solid var(--border-strong); border-radius: var(--radius-sm); padding: 9px 12px; font-family: var(--font-sans); font-size: 14px; color: var(--text); outline: none; }
+    input[type="range"] { width: 100%; accent-color: var(--accent); margin: 8px 0; }
+    .input-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    @media (max-width: 500px) { .input-row { grid-template-columns: 1fr; } }
+    .hero-result { background: linear-gradient(135deg, var(--surface-raised) 0%, var(--surface) 100%); border: 1px solid var(--accent-border); border-radius: var(--radius-lg); padding: 24px 20px; margin-bottom: 16px; text-align: center; }
+    .hero-label { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-bottom: 6px; }
+    .hero-amount { font-family: var(--font-mono); font-size: clamp(34px, 7vw, 46px); font-weight: 800; color: var(--accent); letter-spacing: -0.02em; margin-bottom: 16px; }
+    .hero-subrow { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 12px; border-top: 1px solid var(--border); padding-top: 16px; }
+    .hero-sublabel { font-size: 11px; color: var(--text-dim); text-transform: uppercase; margin-bottom: 4px; }
+    .hero-subval { font-family: var(--font-mono); font-size: 16px; font-weight: 700; color: var(--text); }
+    .hero-subval.highlight { color: var(--teal); }
+    .breakdown-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    .breakdown-table tr { border-bottom: 1px solid var(--border); }
+    .breakdown-table tr:last-child { border-bottom: none; }
+    .breakdown-table td { padding: 10px 0; }
+    .col-label { color: var(--text); font-weight: 500; }
+    .col-sub { display: block; font-size: 11px; color: var(--text-dim); }
+    .col-val { font-family: var(--font-mono); text-align: right; font-weight: 600; color: var(--text); }
+    .verdict-box { padding: 12px; border-radius: var(--radius-sm); margin-top: 14px; font-size: 13px; font-weight: 600; text-align: center; }
+    .verdict-good { background: rgba(16, 185, 129, 0.15); border: 1px solid #10b981; color: #10b981; }
+    .seo-table-wrap { overflow-x: auto; margin-top: 12px; }
+    .seo-table { width: 100%; border-collapse: collapse; font-size: 12px; text-align: left; }
+    .seo-table th { background: var(--surface-raised); color: var(--text-muted); padding: 8px 10px; font-weight: 600; border-bottom: 1px solid var(--border-strong); }
+    .seo-table td { padding: 8px 10px; border-bottom: 1px solid var(--border); color: var(--text); font-family: var(--font-mono); }
+    .seo-table td.strong { font-family: var(--font-sans); font-weight: 600; }
+    .faq-list { display: flex; flex-direction: column; gap: 12px; margin-top: 10px; }
+    .faq-item { border-bottom: 1px solid var(--border); padding-bottom: 12px; }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
+    .faq-a { font-size: 12px; color: var(--text-muted); line-height: 1.5; }
+    .family-nav { margin: 28px auto 16px; padding: 16px 0; border-top: 1px solid var(--border); text-align: left; }
+    .family-title { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-dim); font-weight: 700; margin-bottom: 10px; }
+    .family-links { display: flex; flex-wrap: wrap; gap: 6px; }
+    .family-link { padding: 5px 10px; border-radius: 6px; font-size: 12px; font-weight: 500; text-decoration: none; color: var(--text-muted); background: var(--surface-raised); border: 1px solid var(--border); }
+    .family-link.active { background: var(--accent-muted); border-color: var(--accent); color: var(--accent); font-weight: 700; }
+    footer { margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--border); text-align: center; font-size: 12px; color: var(--text-dim); }
+    footer a { color: var(--accent); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="app-header">
+      <div class="badge-row">
+        <span class="tag tag-accent">Ahorro &amp; Combustibles</span>
+        <span class="tag">Nafta vs GNC 2026</span>
+      </div>
+      <h1>Calculadora GNC vs Nafta</h1>
+      <p class="subtitle">Calculá cuánto dinero ahorrás por mes al pasar tu auto a GNC y en cuántos meses o kilómetros amortizás la instalación del equipo.</p>
+    </header>
+
+    <!-- Parámetros de Uso -->
+    <section class="card">
+      <div class="card-title">Tus Hábitos de Manejo &amp; Precios</div>
+      
+      <div class="form-group">
+        <label>Kilómetros recorridos por mes: <span id="kmDisplay" style="color: var(--accent); font-family: var(--font-mono);">1.500 km</span></label>
+        <input type="range" id="kmSlider" min="400" max="4500" step="100" value="1500" oninput="syncKm(this.value)">
+        <p class="helper-text">1.500 km/mes equivale a unos 50 km diarios (commuting laboral o uso urbano habitual).</p>
+      </div>
+
+      <div class="input-row" style="margin-top: 14px;">
+        <div class="form-group">
+          <label for="consumptionInput">Consumo Nafta (L/100 km)</label>
+          <input type="number" id="consumptionInput" value="8.5" step="0.1" min="4" onchange="calc()">
+        </div>
+        <div class="form-group">
+          <label for="costKitInput">Costo Equipo 5ta Gen ($)</label>
+          <input type="number" id="costKitInput" value="1450000" step="50000" onchange="calc()">
+        </div>
+      </div>
+
+      <div class="input-row" style="margin-top: 14px;">
+        <div class="form-group">
+          <label for="naftaPrice">Precio Litro Nafta Súper ($)</label>
+          <input type="number" id="naftaPrice" value="1195" step="10" onchange="calc()">
+        </div>
+        <div class="form-group">
+          <label for="gncPrice">Precio m³ GNC ($)</label>
+          <input type="number" id="gncPrice" value="620" step="10" onchange="calc()">
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero Result -->
+    <section class="hero-result">
+      <div class="hero-label">Ahorro Mensual Estimado</div>
+      <div class="hero-amount" id="monthlySavingsHero">$ 82.500 / mes</div>
+      <div class="hero-subrow">
+        <div class="hero-subitem">
+          <div class="hero-sublabel">Amortización en Tiempo</div>
+          <div class="hero-subval highlight" id="paybackMonthsHero">17.5 meses</div>
+        </div>
+        <div class="hero-subitem">
+          <div class="hero-sublabel">Amortización en Km</div>
+          <div class="hero-subval" id="paybackKmHero">26.300 km</div>
+        </div>
+        <div class="hero-subitem">
+          <div class="hero-sublabel">Ahorro Anual (12m)</div>
+          <div class="hero-subval highlight" id="annualSavingsHero">$ 990.000</div>
+        </div>
+      </div>
+      <div class="verdict-box verdict-good" id="verdictBox">
+        ✅ Conviene: Amortizás el equipo en menos de 18 meses.
+      </div>
+    </section>
+
+    <!-- Comparativa -->
+    <section class="card">
+      <div class="card-title">Comparativa de Costo Mensual en Surtidor</div>
+      <table class="breakdown-table">
+        <tbody>
+          <tr>
+            <td class="col-label">
+              Gasto Mensual Andando a Nafta
+              <span class="col-sub" id="subNaftaLiters">127.5 litros por mes</span>
+            </td>
+            <td class="col-val" id="rowNaftaCost">$ 152.360</td>
+          </tr>
+          <tr>
+            <td class="col-label">
+              Gasto Mensual Andando a GNC
+              <span class="col-sub" id="subGncM3">112.8 m³ por mes</span>
+            </td>
+            <td class="col-val" id="rowGncCost" style="color: var(--accent);">$ 69.936</td>
+          </tr>
+          <tr>
+            <td class="col-label">
+              Costo de Combustible por Kilómetro
+              <span class="col-sub">Nafta: $101.5/km vs GNC: $46.6/km</span>
+            </td>
+            <td class="col-val" id="rowCostPerKm" style="color: var(--teal);">-54% más barato</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Tabla Rápida -->
+    <section class="card">
+      <div class="card-title">📊 Amortización según Kilómetros Mensuales</div>
+      <div class="seo-table-wrap">
+        <table class="seo-table">
+          <thead>
+            <tr>
+              <th>Km Mensuales</th>
+              <th>Gasto Nafta</th>
+              <th>Gasto GNC</th>
+              <th>Ahorro Mes</th>
+              <th>Meses Amortización</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="strong">800 km/mes</td><td>$ 81.200</td><td>$ 37.300</td><td>$ 43.900</td><td>33 meses</td></tr>
+            <tr><td class="strong">1.500 km/mes</td><td>$ 152.300</td><td>$ 69.900</td><td>$ 82.400</td><td>17.5 meses</td></tr>
+            <tr><td class="strong">2.500 km/mes</td><td>$ 254.000</td><td>$ 116.500</td><td>$ 137.500</td><td>10.5 meses</td></tr>
+            <tr><td class="strong">4.000 km (Uber/Remís)</td><td>$ 406.300</td><td>$ 186.500</td><td>$ 219.800</td><td>6.6 meses</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- In-Page Responsive AdSense Slot -->
+    <div class="ad-slot-container">
+      <div style="font-size: 0.7rem; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">Publicidad</div>
+      <ins class="adsbygoogle"
+           style="display:block; width: 100%;"
+           data-ad-client="ca-pub-3381238987477190"
+           data-ad-slot="9270280155"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <!-- FAQ SEO -->
+    <section class="card">
+      <div class="card-title">❓ Preguntas Frecuentes sobre Instalación de GNC</div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q">¿Se pierde potencia en un equipo de 5ta generación?</div>
+          <div class="faq-a">En los equipos de 5ta y 6ta generación con inyección secuencial computarizada, la pérdida de potencia es imperceptible en uso urbano (apenas un 3% a 5%) y no tironea como los equipos viejos de 3ra generación.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">¿Qué gastos de mantenimiento anual tiene el GNC?</div>
+          <div class="faq-a">Hay que renovar la oblea habilitante de ENARGAS una vez al año y realizar la prueba hidráulica del cilindro cada 5 años. Estos costos suelen recuperarse en apenas 2 a 3 semanas de combustible.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Family Interlinking Nav -->
+    <nav class="family-nav">
+      <span class="family-title">🚗 Costos y Trámites Vehiculares</span>
+      <div class="family-links">
+        <span class="family-link active">⛽ GNC vs Nafta</span>
+        <a href="https://sebiglesias.com.ar/nafta/" class="family-link">⛽ Calculadora de Nafta</a>
+        <a href="https://sebiglesias.com.ar/vtv/" class="family-link">🔧 VTV Verificación</a>
+        <a href="https://sebiglesias.com.ar/transferencia-auto/" class="family-link">📄 Transferencia Auto</a>
+        <a href="https://sebiglesias.com.ar/multas/" class="family-link">🚦 Valor UF Multas</a>
+      </div>
+    </nav>
+
+    <footer>
+      <p><a href="https://sebiglesias.com.ar/">← sebiglesias.com.ar</a> · Calculadoras de movilidad y combustibles</p>
+    </footer>
+  </div>
+
+  <script>
+    let currentKm = 1500;
+
+    function syncKm(v) {
+      currentKm = parseInt(v);
+      document.getElementById('kmDisplay').innerText = currentKm.toLocaleString('es-AR') + ' km';
+      calc();
+    }
+
+    function calc() {
+      const consumption = parseFloat(document.getElementById('consumptionInput').value) || 8.5;
+      const kitCost = parseFloat(document.getElementById('costKitInput').value) || 1450000;
+      const naftaPrice = parseFloat(document.getElementById('naftaPrice').value) || 1195;
+      const gncPrice = parseFloat(document.getElementById('gncPrice').value) || 620;
+
+      // 1 m3 de GNC equivale a 1.13 L de nafta
+      const monthlyNaftaLiters = (currentKm / 100) * consumption;
+      const monthlyGncM3 = monthlyNaftaLiters / 1.13;
+
+      const monthlyNaftaCost = Math.round(monthlyNaftaLiters * naftaPrice);
+      const monthlyGncCost = Math.round(monthlyGncM3 * gncPrice);
+      const monthlySavings = Math.max(0, monthlyNaftaCost - monthlyGncCost);
+      const annualSavings = monthlySavings * 12;
+
+      const monthsPayback = monthlySavings > 0 ? (kitCost / monthlySavings) : 999;
+      const kmPayback = Math.round(monthsPayback * currentKm);
+
+      document.getElementById('monthlySavingsHero').innerText = '$ ' + monthlySavings.toLocaleString('es-AR') + ' / mes';
+      document.getElementById('paybackMonthsHero').innerText = (Math.round(monthsPayback * 10) / 10) + ' meses';
+      document.getElementById('paybackKmHero').innerText = kmPayback.toLocaleString('es-AR') + ' km';
+      document.getElementById('annualSavingsHero').innerText = '$ ' + annualSavings.toLocaleString('es-AR');
+
+      document.getElementById('rowNaftaCost').innerText = '$ ' + monthlyNaftaCost.toLocaleString('es-AR');
+      document.getElementById('rowGncCost').innerText = '$ ' + monthlyGncCost.toLocaleString('es-AR');
+      document.getElementById('subNaftaLiters').innerText = (Math.round(monthlyNaftaLiters * 10) / 10) + ' litros por mes';
+      document.getElementById('subGncM3').innerText = (Math.round(monthlyGncM3 * 10) / 10) + ' m³ por mes';
+
+      const pct = Math.round((monthlySavings / monthlyNaftaCost) * 100);
+      document.getElementById('rowCostPerKm').innerText = `-${pct}% de ahorro`;
+
+      const vBox = document.getElementById('verdictBox');
+      if (monthsPayback <= 12) {
+        vBox.className = 'verdict-box verdict-good';
+        vBox.innerText = `🔥 ¡Súper conveniente! Recuperás la inversión en solo ${Math.round(monthsPayback)} meses.`;
+      } else if (monthsPayback <= 20) {
+        vBox.className = 'verdict-box verdict-good';
+        vBox.innerText = `✅ Conviene: Amortizás el equipo en ${Math.round(monthsPayback)} meses y después es puro ahorro.`;
+      } else {
+        vBox.className = 'verdict-box';
+        vBox.style.background = 'rgba(234, 179, 8, 0.15)';
+        vBox.style.color = '#eab308';
+        vBox.style.border = '1px solid #eab308';
+        vBox.innerText = `⚠️ Uso moderado: Tardás más de ${Math.round(monthsPayback)} meses en amortizar por hacer pocos km.`;
+      }
+    }
+
+    calc();
+  </script>
+</body>
+</html>

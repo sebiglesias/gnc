@@ -1,0 +1,16 @@
+{
+  "name": "Calculadora GNC vs Nafta 2026 | Ahorro Mensual y Amortizaci\u00f3n",
+  "short_name": "GNC vs Nafta",
+  "start_url": "https://sebiglesias.com.ar/gnc/",
+  "display": "standalone",
+  "background_color": "#070c09",
+  "theme_color": "#10b981",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" rx="22" fill="#08140e"/>
+  <!-- Gas Tank Cylinder -->
+  <rect x="22" y="38" width="56" height="26" rx="10" fill="#10b981"/>
+  <!-- Tank Bands -->
+  <rect x="36" y="38" width="4" height="26" fill="#047857"/>
+  <rect x="60" y="38" width="4" height="26" fill="#047857"/>
+  <!-- Valve -->
+  <path d="M78 47 L86 47 L86 55 L78 55 Z" fill="#6ee7b7"/>
+  <circle cx="89" cy="51" r="3" fill="#facc15"/>
+  <!-- Percentage / Spark -->
+  <path d="M46 22 L38 32 L46 32 L42 42 L54 30 L46 30 Z" fill="#facc15"/>
+</svg>
